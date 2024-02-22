@@ -6,9 +6,9 @@
       </a>
 
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 text-secondary">HOME</a></li>
-        <li><a href="#" class="nav-link px-2 text-white">FLIGHTS</a></li>
-        <li><a href="#" class="nav-link px-2 text-white">ABOUT US</a></li>
+        <li><a routerLink="/" class="nav-link px-2 text-white">HOME</a></li>
+        <li><a routerLink="/flights" class="nav-link px-2 text-white">FLIGHTS</a></li>
+        <li><a routerLink = "/about" class="nav-link px-2 text-white">ABOUT US</a></li>
       </ul>
       <div class="text-end">
         <button type="button" class="btn btn-outline-light me-2">LOGIN</button>
@@ -17,70 +17,4 @@
     </div>
   </div>
 </header>
-<!-- Hero -->
-<main>
-  <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="../assets/images/hero.jpg" class="d-block rounded mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="400" loading="lazy">
-      </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Airline reservation system</h1>
-        <p class="lead">Fly with ease! Book your journey hassle-free with our intuitive airline reservation system. Explore destinations, choose your flights, and secure your seats effortlessly. Experience convenience and reliability with us today !</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Book tickets</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Cards -->
-  <div class="container px-4 py-5" id="custom-cards">
-    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Tourist places</h1>
-
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../assets/images/usa.jpg'); background-size: cover;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">USA</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../assets/images/goa.jpg'); background-size: cover;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Goa</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../assets/images/japan.jpg'); background-size: cover;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Japan</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../assets/images/dhola.jpg'); background-size: cover;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Dholakpur</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../assets/images/singapore.jpg'); background-size: cover;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Singapore</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../assets/images/argentinajpg.jpg'); background-size: cover;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Argentina</h3>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</main>
+<router-outlet></router-outlet>
